@@ -6,7 +6,7 @@ app = Flask(__name__)
 def reva_home():
     return{"data": "It's created."}
 @app.route("/image")
-def reva_home():
+def access_image():
     return render_template("home.html")
 
 if __name__=="__main__":
