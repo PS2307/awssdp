@@ -5,9 +5,10 @@ app = Flask(__name__)
 @app.route("/reva")
 def reva_home():
     return{"data": "It's created."}
+
 @app.route("/image")
-def reva_home():
-    return render_template("home.html")
+def access_image():
+    return render_template("head.html")
 
 if __name__=="__main__":
     app.run(host="0.0.0.0",port=5000)
