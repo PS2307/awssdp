@@ -2,7 +2,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route("\reva")
+@app.route("/reva")
 def reva_home():
     return{"data": "It's created."}
 
